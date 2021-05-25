@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /assets/images/
+Disallow: /*?utm* 
+Disallow: /*&utm* 
+Disallow: /*gclid* 
+Disallow: /*yclid* 
+Disallow: /*ymclid* 
+Host: https://ecowood.com.ru/
+Sitemap: https://ecowood.com.ru/sitemap.xml
