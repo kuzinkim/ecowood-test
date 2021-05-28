@@ -2486,3 +2486,270 @@ video {
       -webkit-transform: translateY(0) scale(1.1);
           -ms-transform: translateY(0) scale(1.1);
               transform: translateY(0) scale(1.1); }
+
+.title-mobile{
+  display: none;
+}
+
+.about__advantages-stat--hidden{
+  display: none;
+}
+
+.leasing--mobile{
+  display: none;
+}
+
+.product__pic img{
+  display: none;
+}
+
+.about-service-mobile{
+  display: none;
+}
+
+.about-mobile{
+  display: none;
+}
+
+.header-menu--mobile{
+  display: none;
+}
+
+@media (max-width: 767px) {
+
+  .main__pic{
+    display: none;
+  }
+
+  .title-hidden{
+    display: none;
+  }
+
+  .title-mobile{
+    display: block;
+  }
+
+  .about__advantages{
+    display: none;
+  }
+
+  .about__advantages-stat--hidden{
+    display: block;
+    position: static;
+    transform: none;
+    margin-top: 34px;
+  }
+
+  .about__advantages-stat--hidden .about__advantages-item:not(:last-child){
+    margin-bottom: 28px;
+  }
+
+  .main__button{
+    display: none;
+  }
+
+  .main__description{
+    margin-bottom: 0;
+  }
+
+  .main__wrapper{
+    padding: 20px 20px 34px;
+  }
+
+  .main {
+    padding-bottom: 30px;
+  }
+
+  .about__description{
+    display: none;
+  }
+
+  .about__list-item{
+    list-style: none;
+  }
+
+  .about__list-item::before{
+    content: "\2022";
+    color: #598814;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  .product__tab-item{
+    width: calc(50% - 5px);
+  }
+
+  .product__tab{
+    justify-content: space-between;
+  }
+
+  .product__wrapper-list{
+    display: none;
+  }
+
+  .product__pic{
+    height: auto;
+    background-image: none !important;
+    max-width: 356px;
+    margin: auto;
+  }
+
+  .product__pic img{
+    display: block;
+  }
+
+  .product__tab-btn{
+    white-space: nowrap;
+    padding: 15px 10px;
+  }
+
+  .product__tab-title{
+    font-size: 14px;
+  }
+
+  .product__tab-num{
+    font-size: 14px;
+  }
+
+  .product__tab-arrow{
+    right: 10px;
+  }
+
+  .product__tab-arrow .arrow{
+    width: 16px;
+  }
+
+  .contact__pic{
+    display: none;
+  }
+
+  .contact{
+    padding-bottom: 50px;
+  }
+
+  .product{
+    padding-bottom: 0;
+  }
+
+  .leasing{
+    display: none;
+  }
+
+  .leasing--mobile{
+    display: block;
+  }
+
+  .project__col--bar{
+    display: none;
+  }
+
+  .project.is-active .project__col--bar{
+    display: block;
+  }
+
+  .about-service-mobile{
+    display: block;
+    padding-bottom: 80px;
+  }
+
+  .about__service--hidden{
+    display: none;
+  }
+
+  .about-mobile{
+    display: block;
+  }
+
+  .service__row-wrap{
+    display: none;
+    opacity: 0;
+  }
+
+  .service__row-wrap.is-active{
+    display: block;
+    visibility: visible;
+    -webkit-animation: fade 0.8s ease;
+    animation: fade 0.8s ease;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+
+  .service__row-title{
+    margin: 0;
+    text-align: left;
+    border: 1px solid rgb(38, 19, 13);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 15px 40px 15px 20px;
+    color: #26130d;
+    position: relative;
+  }
+  
+  .service__row{
+    margin-bottom: 20px;
+  }
+
+  .service__row-wrap{
+    margin-top: 40px;
+  }
+
+  .service__tab-arrow{
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    display: flex;
+    justify-content: center;
+  }
+
+  .service__tab-arrow svg{
+    width: 13px;
+  }
+
+  .service__row-title.is-active .service__tab-arrow{
+    transform: translateY(-50%) rotate(270deg);
+  }
+
+  .button-more--element{
+    width: 240px;
+  }
+
+  .product__tab-more{
+    width: 100%;
+  }
+
+  .header__logo{
+    left: 15px;
+    transform: none;
+  }
+
+  .header-menu--mobile{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-menu--mobile .header__contact-icon{
+    margin-right: 20px;
+  }
+
+  .header-menu--mobile .header__contact-icon--mail{
+    width: auto;
+    height: auto;
+  }
+
+  .header-menu--mobile .icon.mail{
+    width: 26px;
+    height: 26px;
+  }
+
+  .header-menu--mobile .icon.phone-header{
+    width: 26px;
+    height: 23px;
+  }
+}
