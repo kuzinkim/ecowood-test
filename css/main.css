@@ -2752,4 +2752,8 @@ video {
     width: 26px;
     height: 23px;
   }
+
+  .header__contact{
+    display: none;
+  }
 }
