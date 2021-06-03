@@ -2515,6 +2515,10 @@ video {
   display: none;
 }
 
+.about__list--hidden{
+  display: none;
+}
+
 @media (max-width: 767px) {
 
   .main__pic{
@@ -2756,4 +2760,30 @@ video {
   .header__contact{
     display: none;
   }
+
+  .leasing__partners{
+    display: none;
+  }
+
+  .about__list{
+    display: none;
+  }
+
+  .about__list--hidden{
+    display: block;
+  }
 }
+
+@media (max-width:380px){
+
+  .product__tab-title{
+    display: block;
+    text-align: center;
+  }
+
+  .product__tab-num {
+    display: block;
+    text-align: center;
+  }
+}
+
