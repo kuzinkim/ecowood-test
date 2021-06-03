@@ -281,9 +281,9 @@ document.addEventListener("DOMContentLoaded", (function (e) {
         })
 
         function tabService() {
-            var tabNav = document.querySelectorAll('.js-service-tab'),
-                tabContent = document.querySelectorAll('.js-service-content'),
-                tabId
+            var tabNav = document.querySelectorAll('.js-service-tab');
+                // tabContent = document.querySelectorAll('.js-service-content'),
+                // tabId
     
                 tabNav.forEach(function(item){
                     item.addEventListener('click', selectTabNav);
@@ -307,29 +307,29 @@ document.addEventListener("DOMContentLoaded", (function (e) {
                         setTimeout(function(){
     
                             window.scrollBy({
-                                top: -60
+                                top: -65
                             })
                         }, 0)
                     }
                     
-                    this.classList.add('is-active');
+                    this.classList.toggle('is-active');
     
-                    tabDataText = this.getAttribute('data-service-id');
-                    selectTabContent(tabDataText);
+                    // tabDataText = this.getAttribute('data-service-id');
+                    // selectTabContent(tabDataText);
                 }
     
-                function selectTabContent(tabName) {
-                    tabContent.forEach(function(item){
-                        var tabContentId = item.getAttribute('data-service-id');
+                // function selectTabContent(tabName) {
+                //     tabContent.forEach(function(item){
+                //         var tabContentId = item.getAttribute('data-service-id');
     
-                        if(tabName == tabContentId){
-                            item.classList.add('is-active');
-                        }else{
-                            item.classList.remove('is-active');
-                        }
-                    });
+                //         if(tabName == tabContentId){
+                //             item.classList.add('is-active');
+                //         }else{
+                //             item.classList.remove('is-active');
+                //         }
+                //     });
                     
-                }
+                // }
         };
 
         tabService();

@@ -2671,15 +2671,6 @@ video {
     opacity: 0;
   }
 
-  .service__row-wrap.is-active{
-    display: block;
-    visibility: visible;
-    -webkit-animation: fade 0.8s ease;
-    animation: fade 0.8s ease;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-
   .service__row-title{
     margin: 0;
     text-align: left;
@@ -2765,12 +2756,21 @@ video {
     display: none;
   }
 
-  .about__list{
+  .about__list--mobile{
     display: none;
   }
 
   .about__list--hidden{
     display: block;
+  }
+
+  .service__row-title.is-active ~ .service__row-wrap{
+    display: block;
+    visibility: visible;
+    -webkit-animation: fade 0.8s ease;
+    animation: fade 0.8s ease;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
   }
 }
 
