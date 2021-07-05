@@ -1164,8 +1164,7 @@ video {
       @media (max-width: 767px) {
         .about__advantages-item {
           padding: 21px;
-          min-width: 281px;
-          max-width: 281px; } }
+          width: 100%; } }
     .about__advantages-icon {
       margin-right: 23px; }
       @media (max-width: 767px) {
@@ -2521,6 +2520,21 @@ video {
 
 @media (max-width: 767px) {
 
+  .about__advantages-item{
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .about__advantages-stat{
+    background-color: rgba(38, 19, 13, 0.65);
+    border-radius: 10px;
+    padding: 21px 15px 21px;
+  }
+
+  .about__advantages-stat--hidden .about__advantages-item:not(:last-child){
+    margin-bottom: 15px;
+  }
+
   .main__pic{
     display: none;
   }
@@ -2542,10 +2556,6 @@ video {
     position: static;
     transform: none;
     margin-top: 34px;
-  }
-
-  .about__advantages-stat--hidden .about__advantages-item:not(:last-child){
-    margin-bottom: 28px;
   }
 
   .main__button{
